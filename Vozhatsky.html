@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ДШО сайт</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="main.css"> 
+  <!-- <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Скрипт для добавления новых элементов таблицы -->
+  <script type="text/javascript">
+    function addRow(content,morecontent)
+    {
+             if (!document.getElementsByTagName) return;
+             tabBody=document.getElementsByTagName("tbody").item(0);
+             row=document.createElement("tr");
+             cell1 = document.createElement("td");
+             cell2 = document.createElement("td");
+             textnode1=document.createTextNode(content);
+             textnode2=document.createTextNode(morecontent);
+             cell1.appendChild(textnode1);
+             cell2.appendChild(textnode2);
+             row.appendChild(cell1);
+             row.appendChild(cell2);
+             tabBody.appendChild(row);
+    }
+  </script>
+</head>
+<body>
+  <!-- Если джава выключен, то появляется сообщение ниже -->
+  <noscript>Включите javaScript!!!</noscript>
+
+  <!-- Меню сайта -->
+  <header>
+    <div class="head">
+      <p><img src="icon.png" alt="imag" style="height: 50px;width: 50px;" hspace="55" align="left"></p>
+      <div id="menu1"><p id="p" style="font-size:30px; color:#f7f7f7; position: relative; left: 500px;">Детска Школьная Организация</p></div>
+  </header>
+  <nav id="menuVertical">
+    <ul>
+      <li><a href="#1"><div class="img_n"><img src="icon.png"></div><span>Приветствие</span></a></li>
+      <li><a href="index.html"><div class="img_n"><img src="icon.png"></div><span>Таблица</span></a></li>
+      <li><a href="#3"><div class="img_n"><img src="icon.png"></div><span>Сектора</span></a>
+        <ul>
+            <li><a href="Media.html">Медиа</a></li>
+            <li><a href="Leisure.html">Досуговый</a></li>
+            <li><a href="Vozhatsky.html">Вожатский</a></li>
+            <li><a href="Volunteer.html">Волонтёрский</a></li>
+            <li><a href="Sporting.html">Спортивный</a></li>
+            <li><a href="Educational and labor.html">Учебно-трудовой</a></li>
+          </ul>
+      </li>
+      <li><a href="#4"><div class="img_n"><img src="icon.png"></div><span>Вход Админа<input id="Password"><button id="submitpww" type="button">Войти</button></span></a>
+      <script src="register4.js" defer></script></li> 
+    </ul>
+  </nav>
+  <div class="menu"><div class="footer">Copyringht * 2024<br>
+  powered by Новости
+  </div></div>
+
+
+  <!-- Таблица Участников и Заслуг -->
+   <div class="tab" id="inputtab">
+    <div id="didi"><p id="demo">
+    </p>
+    </div>
+       <form action="" id="form">
+       <div id="playButton"></div>
+      </form>
+   </div>
+   <div>
+   </div>
+</body>
+</html>
