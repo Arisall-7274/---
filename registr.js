@@ -1,3 +1,33 @@
+function getCookieValue(name) {
+    const cookies = document.cookie.split(';');
+    const res = cookies.find(c => c.startsWith(name + '='));
+    if (res) {
+        return res.substring(res.indexOf('=') + 1);
+    }
+}
+
+
+// function listCookies() {
+//     var theCookies = document.cookie.split(';');
+//     var aString = '';
+//     for (var i = 1 ; i <= theCookies.length; i++) {
+//         aString += i + ' ' + theCookies[i-1] + "\n";
+//     }
+//     return aString;
+// }
+// function getCookieValue(name) {
+//     const cookies = document.cookie.split(';');
+//     const res = cookies.find(c => c.startsWith(name + '='));
+//     if (res) {
+//         return res.substring(res.indexOf('=') + 1);
+//     }
+// }
+
+// // document.cookie = 'theme=dark; domain=.example.com;path=/;expires=952001689';
+// console.log(listCookies())
+// console.log(getCookieValue('_ga'))
+
+
 for (let i = 0; i < localStorage.length; i++) {
     var el = localStorage.key(i)
     for (let i = 1; i < localStorage.getItem('len') +1; i++) {
@@ -58,11 +88,10 @@ if(cod1==1){
 
     let users = {};
 
-    function User(Player, Stars, Shards, Key){
+    function User(Player, Stars, Shards){
         this.Player = Player;
         this.Stars = Stars;
         this.Shards = Shards;
-        this.Key = Key;
     }
 
     document.getElementById('11').onclick = myFunction1;
@@ -129,6 +158,7 @@ function myFunction2() {
         var el = localStorage.key(i)
         for (let i = 1; i < localStorage.getItem('len') +1; i++) {
             var el1 = ('User' + i) 
+            console.log(el1)
             if(el1 == el){
                 var userss = JSON.parse(localStorage.getItem('User' + i));
     
