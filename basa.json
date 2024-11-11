@@ -2,19 +2,21 @@
     {
     "User": "User0",
     "Player":"Андрей Ардашев",
-    "Stars":"★★★",
-    "Shards":"☠️"
+    "Progress":"★★☠️☠️★"
     },
     {
     "User": "User1",
     "Player":"Андрей Ардашев",
-    "Stars":"★★★",
-    "Shards":"☠️"
+    "Progress":"★★☠️★"
     },
     {
     "User": "User2",
     "Player":"Андрей Ардашев",
-    "Stars":"★★★",
-    "Shards":"☠️"
+    "Progress":"★★★☠️☠️☠️☠️"
+    },
+    {
+    "User": "User3",
+    "Player":"Андрей Ардашев",
+    "Progress":"★★★★★★★"
     }
 ]

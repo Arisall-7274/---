@@ -1,13 +1,4 @@
-// fetch('http://localhost:5000/users')
-fetch('http://localhost:5000/users', {
-    mode: 'no-cors',
-    method: "post",
-    headers: {
-         "Content-Type": "application/json"
-    }
-})
-
-
+fetch('basa.json')
 .then(function (response) {
     return response.json();
 })
@@ -19,12 +10,24 @@ fetch('http://localhost:5000/users', {
 });
 
 function appendData(data) {
-let mainContainer = document.getElementById("myData");
+// let mainContainer = document.getElementById("myData");
 for (let i = 0; i < data.length; i++) {
-    console.log(data[i])
-    let div = document.createElement("div");
-    div.innerHTML = data[i].Player + ' ' + data[i].Stars + ' ' + data[i].Shards;
-    mainContainer.appendChild(div);
+    // console.log(data[i])
+    // let div = document.createElement("div");
+    // div.innerHTML = data[i].Player + ' ' + data[i].Stars + ' ' + data[i].Shards;
+    // mainContainer.appendChild(div);
+
+    var PlayerUser1 = data[i].Player;
+    var ProgressUser1 = data[i].Progress;
+
+    var myTable = document.getElementById('inputtab').getElementsByTagName('tbody')[0];
+
+    var row = myTable.insertRow();
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+
+    cell1.innerHTML = PlayerUser1;
+    cell2.innerHTML = ProgressUser1;
 }
 }
 

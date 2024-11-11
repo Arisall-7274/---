@@ -1,58 +1,28 @@
-function getCookieValue(name) {
-    const cookies = document.cookie.split(';');
-    const res = cookies.find(c => c.startsWith(name + '='));
-    if (res) {
-        return res.substring(res.indexOf('=') + 1);
-    }
-}
+// for (let i = 0; i < localStorage.length; i++) {
+//     var el = localStorage.key(i)
+//     for (let i = 1; i < localStorage.getItem('len') +1; i++) {
+//         var el1 = ('User' + i)
+//         // var userss = JSON.parse(localStorage.getItem('User' + i));   
+//         if(el1 == el){
+//             var userss = JSON.parse(localStorage.getItem('User' + i));
 
+//             var PlayerUser1 = userss.Player;
+//             var StarsUser1 = userss.Stars;
+//             var ShardsUser1 = userss.Shards;
 
-// function listCookies() {
-//     var theCookies = document.cookie.split(';');
-//     var aString = '';
-//     for (var i = 1 ; i <= theCookies.length; i++) {
-//         aString += i + ' ' + theCookies[i-1] + "\n";
-//     }
-//     return aString;
-// }
-// function getCookieValue(name) {
-//     const cookies = document.cookie.split(';');
-//     const res = cookies.find(c => c.startsWith(name + '='));
-//     if (res) {
-//         return res.substring(res.indexOf('=') + 1);
-//     }
-// }
+//             var myTable = document.getElementById('inputtab').getElementsByTagName('tbody')[0];
 
-// // document.cookie = 'theme=dark; domain=.example.com;path=/;expires=952001689';
-// console.log(listCookies())
-// console.log(getCookieValue('_ga'))
-
-
-for (let i = 0; i < localStorage.length; i++) {
-    var el = localStorage.key(i)
-    for (let i = 1; i < localStorage.getItem('len') +1; i++) {
-        var el1 = ('User' + i)
-        // var userss = JSON.parse(localStorage.getItem('User' + i));   
-        if(el1 == el){
-            var userss = JSON.parse(localStorage.getItem('User' + i));
-
-            var PlayerUser1 = userss.Player;
-            var StarsUser1 = userss.Stars;
-            var ShardsUser1 = userss.Shards;
-
-            var myTable = document.getElementById('inputtab').getElementsByTagName('tbody')[0];
-
-            var row = myTable.insertRow();
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            var cell3 = row.insertCell(2);
+//             var row = myTable.insertRow();
+//             var cell1 = row.insertCell(0);
+//             var cell2 = row.insertCell(1);
+//             var cell3 = row.insertCell(2);
         
-            cell1.innerHTML = PlayerUser1;
-            cell2.innerHTML = StarsUser1;
-            cell3.innerHTML = ShardsUser1;
-        }
-    }
-}
+//             cell1.innerHTML = PlayerUser1;
+//             cell2.innerHTML = StarsUser1;
+//             cell3.innerHTML = ShardsUser1;
+//         }
+//     }
+// }
 
 let login = document.querySelector('#Password');
 
@@ -61,7 +31,7 @@ function myFunction() {
     const Login = login.value;
     var Loginn = bigIntHash(Login)
 
-if(Loginn=='2290499168860'){
+if(Loginn=='2290499198651'){
     var cod1 = 1;
 }
 else if(Loginn=='1723'){
