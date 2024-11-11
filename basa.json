@@ -18,5 +18,10 @@
     "User": "User3",
     "Player":"Андрей Ардашев",
     "Progress":"★★★★★★★"
-    }
+    },
+    {
+    "User": "User4",
+    "Player":"Крот",
+    "Progress":"★★☠️☠️"
+    },
 ]
