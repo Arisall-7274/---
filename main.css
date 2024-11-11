@@ -1,3 +1,7 @@
+:root {
+  --background1: #79b3d2;
+}
+
 /* media {
     display: block;
     width: auto;
@@ -52,11 +56,6 @@ body {
   width: 175px;
   position: relative;
 }
-
-:root {
-  --background1: #ff7cd1;
-}
-
 
 #menuVertical ul li a {
   position: relative;
