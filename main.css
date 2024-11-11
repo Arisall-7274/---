@@ -71,7 +71,7 @@ body {
   color: #fff;
   line-height: 2em;
   padding: 10px 15px;
-  background: var(--background1);
+/*   background: var(--background1); */
   text-decoration: none;
 }
 
