@@ -8,7 +8,7 @@ function myFunction() {
     const Login = login.value;
     var Loginn = bigIntHash(Login)
 
-if(Loginn=='2290499168860'){
+if(Loginn=='2290499198651'){
     var cod1 = 1;
 }
 else if(Loginn==1723){

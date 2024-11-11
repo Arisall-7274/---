@@ -17,19 +17,10 @@ for (let i = 0; i < data.length; i++) {
     // div.innerHTML = data[i].Player + ' ' + data[i].Stars + ' ' + data[i].Shards;
     // mainContainer.appendChild(div);
 
-    if(data[i].User != "TextM" && data[i].User != "Text2"&& data[i].User != "Text3" && data[i].User != "Text4" && data[i].User != "Text5" && data[i].User != "Text6" && data[i].User != "Text7"){
-        var PlayerUser1 = data[i].Player;
-        var ProgressUser1 = data[i].Progress;
-    
-        var myTable = document.getElementById('inputtab').getElementsByTagName('tbody')[0];
-    
-        var row = myTable.insertRow();
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-    
-        cell1.innerHTML = PlayerUser1;
-        cell2.innerHTML = ProgressUser1;
+    if(data[i].User == "Text4"){
+        document.getElementById("demo").innerHTML = data[i].Text;
     }
+
 }
 }
 

@@ -25,8 +25,31 @@
     "Progress":"★★☠️☠️"
     },
     {
-    "User": "User5",
-    "Player":"Антарктида",
-    "Progress":"★★☠️★★★☠️☠️★★★☠️☠️★★★★☠️☠️☠️"
+    "User": "TextM",
+    "Text": "Привет<br>Как дела?"
+    },
+    {
+    "User": "Text2",
+    "Text":"Крот1"
+    },
+    {
+    "User": "Text3",
+    "Text":"Крот2"
+    },
+    {
+    "User": "Text4",
+    "Text":"Крот3"
+    },
+    {
+    "User": "Text5",
+    "Text":"Крот4"
+    },
+    {
+    "User": "Text6",
+    "Text":"Крот5"
+    },
+    {
+    "User": "Text7",
+    "Text":"Крот6"
     }
 ]
